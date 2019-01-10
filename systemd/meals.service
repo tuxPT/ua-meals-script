@@ -1,0 +1,6 @@
+[Unit]
+Description=Get meals from UA
+
+[Service]
+Type=oneshot
+ExecStart=python ".ua-meals/meals.py"

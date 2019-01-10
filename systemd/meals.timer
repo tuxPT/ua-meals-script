@@ -1,0 +1,9 @@
+[Unit]
+Description=Get meals from UA
+
+[Timer]
+OnCalendar=*-*-* 11:50:00
+OnCalendar=*-*-* 19:15:00
+
+[Install]
+WantedBy=timers.target
