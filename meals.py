@@ -1,3 +1,5 @@
+#encoding: utf-8
+
 import os
 from lxml import etree
 from datetime import datetime
@@ -33,9 +35,9 @@ def format_query_output(menu):
 
 def get_afuav_meal():
     page = requests.get('https://www.facebook.com/AFUAv-1411897009022037/')
-    soup = BeautifulSoup(page.content.decode('ascii', 'ignore'), 'lxml')
+    soup = BeautifulSoup(page.content.decode('utf-8', 'ignore'), 'lxml')
     divs = soup.find_all('div', {'class': 'userContent'})
-    ignore = ['Boa', 'Bom', 'Hoje', 'Ficamos', 'Ver', '...']
+    ignore = ['Boa', 'Bom', 'Hoje', 'Ficamos', 'Ver', '...', '🍽️']
     view = ''
     paragraphs = divs[0].find_all(['p', 'span'])
     for p in paragraphs:
