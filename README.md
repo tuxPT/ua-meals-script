@@ -1,3 +1,5 @@
+# __WARNING__ : THIS REPOSITORY IS BEING MERGED INTO https://github.com/GLUA-UA/meals-ua 
+
 # Install
 ```shell
 $ cp systemd/* ~/.config/systemd/user/
